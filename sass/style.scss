@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+$bar-gradient-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+$icon-background-color: hsl(229, 57%, 11%);
+$card-color: hsl(228, 56%, 26%);
+$font-color: hsla(243, 100%, 93%, 0.775);
+$second-font-color: hsl(229, 7%, 55%);
+$font-size: 11px;
+
+@mixin mq($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $icon-background-color;
+  background-image: url("/images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  color: $font-color;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: $card-color;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 250px;
+  .logo {
+    margin: 1rem;
+    display: block;
+  }
+
+  .icon {
+    padding: 0.7rem;
+    margin: 0.7rem 0rem 0.7rem 1rem;
+    background-color: $icon-background-color;
+    border-radius: 10px;
+  }
+  p {
+    margin: 1rem;
+    text-align: center;
+    display: block;
+    color: $font-color;
+    font-size: $font-size;
+  }
+
+  .progressBar {
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 3px;
+    border-radius: 30px;
+    background: hsl(227, 68%, 14%);
+  }
+
+  .bar {
+    height: 8px;
+    border-radius: 30px;
+    background-image: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
+
+    width: 81%;
+  }
+  .progress {
+    font-size: 9px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 1rem 0 1rem;
+  }
+
+  .gbLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: -3rem;
+
+    .number {
+      color: $icon-background-color;
+      font-size: 35px;
+      font-weight: 700;
+    }
+    .text {
+      margin-left: 0.5rem;
+      color: $second-font-color;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  }
+}
+
+@include mq(768px) {
+  body {
+    background-image: url("/images/bg-desktop.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wide {
+    min-width: 450px;
+  }
+
+  .card {
+    p {
+      margin-top: 2.25rem;
+      text-align: left;
+    }
+    .gbLeft {
+      border-radius: 10px;
+      max-width: 30%;
+      margin: 0rem;
+      margin-top: -9rem;
+      margin-left: 65%;
+    }
+  }
+}
+
+.round-corner {
+  border-top-right-radius: 75px;
+}
+
+.white {
+  color: white;
+}
