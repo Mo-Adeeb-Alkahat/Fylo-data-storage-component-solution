@@ -22,7 +22,7 @@ $font-size: 11px;
 html,
 body {
   background-color: $icon-background-color;
-  background-image: url("/images/bg-mobile.png");
+  background-image: url("./images/bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -116,7 +116,7 @@ body {
 
 @include mq(768px) {
   body {
-    background-image: url("/images/bg-desktop.png");
+    background-image: url("./images/bg-desktop.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;

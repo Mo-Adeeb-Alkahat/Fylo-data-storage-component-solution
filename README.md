@@ -1,4 +1,4 @@
-# Frontend Mentor - Fylo data storage component solution
+# Frontend Mentor - o
 
 This is a solution to the [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/AdeebAlk/Fylo-data-storage-component-solution)
+- Live Site URL: [live site](https://adeebalk.github.io/Fylo-data-storage-component-solution/)
 
 ## My process
 
